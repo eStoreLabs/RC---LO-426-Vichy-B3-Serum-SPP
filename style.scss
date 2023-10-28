@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-$regular: 'Spartan', sans-serif;
+$regular: 'Roboto', sans-serif;
+$secondary: 'Montserrat', sans-serif;
 $red: #e03e2f;
 $black: #2b2a29;
 
@@ -49,12 +50,26 @@ body {
     color: #111;
   }
 
+  .es-title {
+    @include text;
+    margin-top: 50px;
+    font-family: $secondary;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 32px;
+    margin-left: 20px;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
   .es-kv {
     background: #fff;
     &__images {
       padding: 0 16px;
       padding-top: 37px;
-      padding-bottom: 20px;
+      padding-bottom: 45px;
     }
     &__logo {
       margin-bottom: 20px;
@@ -72,10 +87,21 @@ body {
       animation: slidedown 0.6s ease forwards;
       animation-delay: 0.6s;
     }
+    &__disc-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 5px;
+    }
     &__disc {
       @include text;
-      font-size: 7.5px;
-      text-align: center;
+      font-size: 14.78px;
+      text-align: left;
+      text-transform: uppercase;
+      max-width: 190px;
+      & span {
+        font-weight: 900;
+      }
     }
     &__photo {
       position: relative;
@@ -89,10 +115,12 @@ body {
     }
     &__title-img {
       @include img;
+      max-width: 80%;
+      margin-left: -8px;
     }
     &__content {
       background: url('images/photo.jpg') center / cover no-repeat;
-      padding-top: 69px;
+      padding-top: 45px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -111,14 +139,171 @@ body {
     }
   }
 
+  .es-icons {
+    background-color: #f4f4f4;
+    display: none;
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      max-width: 211px;
+    }
+
+    &__title {
+      @include text;
+      font-family: $secondary;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  .es-info {
+    &__wrapper {
+      min-height: 382px;
+      background: #fff url(images/info-image.png) -190px -20px no-repeat;
+      background-size: contain;
+    }
+
+    &__steps {
+      list-style: none;
+    }
+
+    &__steps-item {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      position: relative;
+      @include text;
+      font-family: $secondary;
+      font-size: 11px;
+      // margin-bottom: 20px;
+
+      &--bold {
+        font-weight: 700;
+      }
+
+      &--1 {
+        margin-left: 10%;
+
+        &::before {
+          content: '';
+          width: 30px;
+          height: 30px;
+          background: url(images/list-icon-1-m.png) no-repeat;
+          position: absolute;
+          top: 0px;
+          left: -42px;
+        }
+      }
+      &--2 {
+        margin-left: 38%;
+
+        &::before {
+          content: '';
+          width: 30px;
+          height: 30px;
+          background: url(images/list-icon-2-m.png) no-repeat;
+          position: absolute;
+          top: 4px;
+          left: -50px;
+        }
+      }
+      &--3 {
+        margin-top: 70px;
+        margin-left: 40%;
+
+        &::before {
+          content: '';
+          width: 30px;
+          height: 30px;
+          background: url(images/list-icon-3-m.png) no-repeat;
+          position: absolute;
+          top: -5px;
+          left: -45px;
+        }
+      }
+      &--4 {
+        margin-top: 60px;
+        margin-left: 15%;
+
+        &::before {
+          content: '';
+          width: 30px;
+          height: 30px;
+          background: url(images/list-icon-4-m.png) no-repeat;
+          position: absolute;
+          top: -7px;
+          left: -49px;
+        }
+      }
+    }
+  }
+
+  .es-dermatologits {
+    // background-color: f2f4f6;
+
+    &__title {
+      margin-top: 0;
+    }
+
+    &__wrapper {
+      // background: url('./images/dermatologist-bg.png') no-repeat;
+      // background-size: contain;
+      // min-height: 410px;
+    }
+
+    &__image {
+      @include img;
+    }
+
+    &__subtitle {
+      @include text;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 10px;
+      font-family: $secondary;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: #f2f4f6;
+      text-align: center;
+
+      & sup {
+        margin-left: -10px;
+        margin-top: 15px;
+        align-self: normal;
+        display: inline-block;
+        vertical-align: baseline;
+      }
+
+      & span {
+        font-size: 50px;
+        color: $red;
+      }
+    }
+  }
+
   .es-ingr {
     margin-bottom: 64px;
     padding: 0 16px;
     &__title {
       @include text;
+      margin-top: 50px;
       font-size: 22px;
       font-weight: 700;
-      text-align: center;
+      text-align: left;
       margin-bottom: 32px;
     }
     &__container {
@@ -336,7 +521,7 @@ body {
         position: relative;
         padding: 17px 50px 17px 15px;
         font-size: 16px;
-        color: #FFF;
+        color: #fff;
         -webkit-transition: all 200ms ease-out;
         -moz-transition: all 200ms ease-out;
         -o-transition: all 200ms ease-out;
@@ -416,7 +601,6 @@ body {
     }
   }
 
-
   @media screen and (min-width: 560px) {
     .es-kv {
       display: flex;
@@ -454,8 +638,11 @@ body {
 
   @media screen and (min-width: 768px) {
     .es-kv {
-      margin-bottom: 32px;
-    }}
+      // margin-bottom: 32px;
+    }
+    .es-icons {
+      display: block;
+    }
     .es-ingr {
       margin-bottom: 64px;
       &__title {
@@ -483,34 +670,40 @@ body {
   }
 
   @media screen and (min-width: 860px) {
-
     .es-cross {
       &__single:nth-child(3) {
         margin-right: 90px;
       }
     }
+
+    .es-icons {
+      &__title {
+        font-size: 14px;
+      }
+    }
   }
 
-@keyframes slidedown {
-  from {
-    opacity: 0;
-    transform: translateY(-32px);
+  @keyframes slidedown {
+    from {
+      opacity: 0;
+      transform: translateY(-32px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+  @keyframes slideright {
+    from {
+      opacity: 0.3;
+      transform: translateX(-100px);
+    }
 
-@keyframes slideright {
-  from {
-    opacity: 0.3;
-    transform: translateX(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }

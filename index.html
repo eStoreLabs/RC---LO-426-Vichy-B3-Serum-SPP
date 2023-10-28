@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vichy</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Spartan:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -31,8 +32,11 @@
               class="es-kv__disc-img"
             />
             <p class="es-kv__disc">
-              REKOMENDOWANY PRZEZ POLSKIE TOWARZYSTWO MEDYCYNY EsTETYCZNEJ I
-              ANTI-AGING
+              REKOMENDOWANY PRZEZ
+              <span
+                >POLSKIE TOWARZYSTWO MEDYCYNY EsTETYCZNEJ
+                <br />I&nbsp;ANTI-AGING</span
+              >
             </p>
           </div>
         </div>
@@ -53,65 +57,92 @@
       <section class="es-icons">
         <div class="es-icons__list">
           <div class="es-icons__item">
-            <img src="" alt="" class="es-icons__icon" />
+            <img src="./images/icon-1.png" alt="" class="es-icons__icon" />
             <p class="es-icons__title">hipoalergiczne</p>
           </div>
           <div class="es-icons__item">
-            <img src="" alt="" class="es-icons__icon" />
+            <img src="./images/icon-2.png" alt="" class="es-icons__icon" />
             <p class="es-icons__title">
               dla skóry <br />
-              z przebarwieniami
+              z&nbsp;przebarwieniami
             </p>
           </div>
           <div class="es-icons__item">
-            <img src="" alt="" class="es-icons__icon" />
+            <img src="./images/icon-3.png" alt="" class="es-icons__icon" />
             <p class="es-icons__title">na dzień / na noc</p>
           </div>
           <div class="es-icons__item">
-            <img src="" alt="" class="es-icons__icon" />
-            <p class="es-icons__title">odpowiednie dla skóry wrażliwej</p>
+            <img src="./images/icon-4.png" alt="" class="es-icons__icon" />
+            <p class="es-icons__title">odpowiednie dla skóry&nbsp;wrażliwej</p>
           </div>
         </div>
       </section>
 
       <section class="es-info">
         <div class="es-info__border">
-          <h3 class="es-info__title">
-            Działanie: skuteczna redukcja przebarwień i zmarszczek
+          <h3 class="es-title es-info__title">
+            <span>Działanie:</span> skuteczna redukcja przebarwień
+            i&nbsp;zmarszczek
           </h3>
         </div>
         <div class="es-info__wrapper">
-          <img src="" alt="" class="es-info__image" />
+          <!-- <img src="./images/info-image.png" alt="" class="es-info__image" /> -->
           <ul class="es-info__steps">
             <li class="es-info__steps-item">
-              Skuteczność od pierwszego zastosowania: skóra jest wygładzona i
-              pełna blasku
+              <p class="es-info__text es-info__text--1">
+                Skuteczność od pierwszego zastosowania: <br /><span
+                  class="es-info__text--bold"
+                  >skóra jest wygładzona i pełna blasku</span
+                >
+              </p>
             </li>
             <li class="es-info__steps-item">
-              Dzień po dniu przebarwienia i zmarszczki są zredukowane, a koloryt
-              skóry wyrównany
+              <p class="es-info__text es-info__text--2">
+                Dzień po dniu przebarwienia <br />i zmarszczki są
+                zredukowane,<br />
+                <span class="es-info__text--bold"
+                  >a koloryt skóry wyrównany</span
+                >
+              </p>
             </li>
             <li class="es-info__steps-item">
-              Formuła inspirowana nieinwazyjnymi zabiegami medycyny estetycznej
+              <p class="es-info__text es-info__text--3">
+                Formuła inspirowana <br />nieinwazyjnymi zabiegami
+                <br />medycyny estetycznej
+              </p>
             </li>
             <li class="es-info__steps-item">
-              Silne składniki aktywne działają na różnych poziomach naskórka,
-              aby skutecznie zredukować przebarwienia
+              <p class="es-info__text es-info__text--4">
+                Silne składniki aktywne działają na różnych <br />poziomach
+                naskórka,
+                <span class="es-info__text--bold"
+                  >aby skutecznie <br />zredukować przebarwienia</span
+                >
+              </p>
             </li>
           </ul>
         </div>
       </section>
 
       <section class="es-dermatologits">
-        <h3 class="es-dermatologits__title">Dermatolodzy potwierdzają</h3>
+        <h3 class="es-title es-dermatologits__title">
+          <span>Dermatolodzy potwierdzają</span>
+        </h3>
 
-        <p class="es-dermatologits__subtitle">
-          aż do <span>-71%</span> przebarwień(1)
-        </p>
+        <div class="es-dermatologits__wrapper">
+          <p class="es-dermatologits__subtitle">
+            aż do <span>-71%</span> przebarwień<sup>(1)</sup>
+          </p>
+        </div>
+        <img
+          class="es-dermatologits__image"
+          src="./images/dermatologist-bg-m.png"
+          alt=""
+        />
       </section>
 
       <section class="es-ingr">
-        <h3 class="es-ingr__title">Silne składniki aktywne</h3>
+        <h3 class="es-title es-ingr__title">Silne składniki <br />aktywne</h3>
         <div class="es-ingr__container">
           <div class="es-ingr__single">
             <div class="es-ingr__image">

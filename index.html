@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -144,46 +150,78 @@
       <section class="es-ingr">
         <h3 class="es-title es-ingr__title">Silne składniki <br />aktywne</h3>
         <div class="es-ingr__container">
-          <div class="es-ingr__single">
-            <div class="es-ingr__image">
-              <img src="images/ingr-1.png" alt="" class="es-ingr__img" />
-              <p class="es-ingr__label">5% niacynamid (witamina B3)</p>
-            </div>
-            <p class="es-ingr__text">
-              Działa w głębszych warstwach naskórka, aby widocznie zmniejszyć
-              przebarwienia oraz ograniczyć powstawanie nowych.
-            </p>
-          </div>
-          <div class="es-ingr__single">
-            <div class="es-ingr__image">
-              <img src="images/ingr-2.png" alt="" class="es-ingr__img" />
-              <p class="es-ingr__label">
-                8% kwas glikolowy + składniki peelingujące
+          <div class="es-ingr__slides es-slick-carousel">
+            <div class="es-ingr__single es-ingr__single--1">
+              <div class="es-ingr__image">
+                <img src="images/ingr-1-m.png" alt="" class="es-ingr__img" />
+                <p class="es-ingr__label">5% niacynamid (witamina B3)</p>
+              </div>
+              <p class="es-ingr__text">
+                Działa w głębszych warstwach naskórka, aby widocznie zmniejszyć
+                przebarwienia oraz ograniczyć powstawanie nowych.
               </p>
             </div>
-            <p class="es-ingr__text">
-              Delikatnie złuszczają powierzchnię skóry, aby wydobyć jej blask i
-              ujednolicić koloryt.
-            </p>
-          </div>
-          <div class="es-ingr__single">
-            <div class="es-ingr__image">
-              <img src="images/ingr-3.png" alt="" class="es-ingr__img" />
-              <p class="es-ingr__label">witamina cg</p>
+            <div class="es-ingr__single">
+              <div class="es-ingr__image">
+                <img
+                  src="images/ingr-2.png"
+                  alt=""
+                  class="es-ingr__img es-ingr__img--mobile"
+                />
+                <p class="es-ingr__label">
+                  8% kwas glikolowy <br />+ składniki peelingujące
+                </p>
+              </div>
+              <p class="es-ingr__text">
+                Delikatnie złuszczają powierzchnię skóry, aby wydobyć jej blask
+                i ujednolicić koloryt.
+              </p>
             </div>
-            <p class="es-ingr__text">
-              Antyoksydant o działaniu wyrównującym koloryt w górnych warstwach
-              naskórka.
-            </p>
-          </div>
-          <div class="es-ingr__single">
-            <div class="es-ingr__image">
-              <img src="images/ingr-3.png" alt="" class="es-ingr__img" />
-              <p class="es-ingr__label">bio-peptyd</p>
+            <div class="es-ingr__single">
+              <div class="es-ingr__image">
+                <img
+                  src="images/ingr-3.png"
+                  alt=""
+                  class="es-ingr__img es-ingr__img--mobile"
+                />
+                <p class="es-ingr__label">witamina cg</p>
+              </div>
+              <p class="es-ingr__text">
+                Antyoksydant o działaniu wyrównującym koloryt w górnych
+                warstwach naskórka.
+              </p>
             </div>
-            <p class="es-ingr__text">
-              Krótkie fragmenty aminokwasów o działaniu przeciwzmarszczkowym.
-            </p>
+            <div class="es-ingr__single">
+              <div class="es-ingr__image">
+                <img
+                  src="images/ingr-4.png"
+                  alt=""
+                  class="es-ingr__img es-ingr__img--mobile es-ingr__img--mobile-big"
+                />
+                <p class="es-ingr__label">bio-peptyd</p>
+              </div>
+              <p class="es-ingr__text">
+                Krótkie fragmenty aminokwasów o działaniu przeciwzmarszczkowym.
+              </p>
+            </div>
+          </div>
+          <div class="slick-button-prev">
+            <div class="es-slider__arrow">
+              <img
+                src="./images/arrow-next.png"
+                alt=""
+                class="es-slider__img"
+              />
+            </div>
+          </div>
+          <div class="slick-button-next">
+            <div class="es-slider__arrow">
+              <img
+                src="./images/arrow-next.png"
+                alt=""
+                class="es-slider__img"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -191,14 +229,27 @@
       <section class="es-video">
         <div class="es-video__wrapper">
           <video
-            class="es-video__player"
+            class="es-video__player es-video__player--mobile"
             src="./video/Vichy-Liftactiv-B3-vertical.mp4"
             id="player"
           ></video>
-          <div class="es-video__play-button">
+          <video
+            class="es-video__player es-video__player--desktop"
+            src="./video/Vichy-Liftactiv-B3-video-horizontal.mp4"
+            id="player-desktop"
+          ></video>
+          <div class="es-video__play-button es-video__play-button--mobile">
             <img
               class="es-video__image-icon"
               src="./images/video-icon.png"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="es-video__play-button es-video__play-button--desktop">
+            <img
+              class="es-video__image-icon es-video__image-icon--desktop"
+              src="./images/video-icon-d.png"
               alt=""
               loading="lazy"
             />
@@ -495,16 +546,20 @@
   <script src="./scripts/script.js"></script>
   <script>
     // require(['jquery', 'slick'], function ($) {
-    // $(document).ready(function () {
-    //   $('.es-slick-carousel').slick({
-    //     dots: true,
-    //     infinite: true,
-    //     prevArrow: '.slick-button-prev',
-    //     nextArrow: '.slick-button-next',
-    //     appendDots: '.slick-pagination',
-    //     adaptiveHeight: true,
-    //   });
-    // });
+    $(document).ready(function () {
+      $('.es-slick-carousel').slick({
+        // dots: true,
+        infinite: false,
+        slidesToShow: 1,
+        centerMode: true,
+        // centerPadding: '100px',
+        cssEase: 'linear',
+        prevArrow: '.slick-button-prev',
+        nextArrow: '.slick-button-next',
+        variableWidth: true,
+        // adaptiveHeight: true,
+      });
+    });
 
     // $(document).ready(function () {
     //   $('.es-slick-carousel-2').slick({

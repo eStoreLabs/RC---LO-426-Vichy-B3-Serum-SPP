@@ -5,7 +5,7 @@ body {
 }
 
 #es-vichy.es-vichy {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 1.2;
@@ -23,7 +23,7 @@ body {
 #es-vichy.es-vichy h3,
 #es-vichy.es-vichy h4,
 #es-vichy.es-vichy h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #111;
 }
 #es-vichy.es-vichy .es-title {
@@ -34,7 +34,7 @@ body {
   font-family: inherit;
   font-weight: inherit;
   margin-top: 50px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   text-align: left;
   margin-bottom: 32px;
@@ -54,17 +54,22 @@ body {
 #es-vichy.es-vichy .es-kv__logo {
   margin-bottom: 20px;
   opacity: 0;
+  -webkit-animation: slidedown 0.6s ease forwards;
   animation: slidedown 0.6s ease forwards;
 }
 #es-vichy.es-vichy .es-kv__claim {
   margin-bottom: 32px;
   opacity: 0;
+  -webkit-animation: slidedown 0.6s ease forwards;
   animation: slidedown 0.6s ease forwards;
+  -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s;
 }
 #es-vichy.es-vichy .es-kv__packshot {
   opacity: 0;
+  -webkit-animation: slidedown 0.6s ease forwards;
   animation: slidedown 0.6s ease forwards;
+  -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
 #es-vichy.es-vichy .es-kv__disc-wrapper {
@@ -72,7 +77,7 @@ body {
   align-items: center;
   justify-content: center;
   -moz-column-gap: 5px;
-       column-gap: 5px;
+  column-gap: 5px;
 }
 #es-vichy.es-vichy .es-kv__disc {
   margin: 0;
@@ -100,7 +105,7 @@ body {
 #es-vichy.es-vichy .es-kv__img--photo {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #es-vichy.es-vichy .es-kv__title-img {
   max-width: 100%;
@@ -110,7 +115,7 @@ body {
   margin-left: -8px;
 }
 #es-vichy.es-vichy .es-kv__content {
-  background: url("images/photo.jpg") center/cover no-repeat;
+  background: url('images/photo.jpg') center/cover no-repeat;
   padding-top: 45px;
   display: flex;
   justify-content: flex-end;
@@ -130,7 +135,9 @@ body {
   font-size: 26px;
   text-align: right;
   opacity: 0;
+  -webkit-animation: slideright 0.6s ease forwards;
   animation: slideright 0.6s ease forwards;
+  -webkit-animation-delay: 0.9s;
   animation-delay: 0.9s;
 }
 #es-vichy.es-vichy .es-icons {
@@ -147,7 +154,7 @@ body {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 211px;
@@ -159,7 +166,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -189,7 +196,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 11px;
 }
 #es-vichy.es-vichy .es-info__text--bold {
@@ -199,7 +206,7 @@ body {
   margin-left: 10%;
 }
 #es-vichy.es-vichy .es-info__text--1::before {
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   background: url(images/list-icon-1-m.png) no-repeat;
@@ -211,7 +218,7 @@ body {
   margin-left: 38%;
 }
 #es-vichy.es-vichy .es-info__text--2::before {
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   background: url(images/list-icon-2-m.png) no-repeat;
@@ -224,7 +231,7 @@ body {
   margin-left: 40%;
 }
 #es-vichy.es-vichy .es-info__text--3::before {
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   background: url(images/list-icon-3-m.png) no-repeat;
@@ -237,7 +244,7 @@ body {
   margin-left: 15%;
 }
 #es-vichy.es-vichy .es-info__text--4::before {
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   background: url(images/list-icon-4-m.png) no-repeat;
@@ -264,8 +271,8 @@ body {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 10px;
-       column-gap: 10px;
-  font-family: "Montserrat", sans-serif;
+  column-gap: 10px;
+  font-family: 'Montserrat', sans-serif;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f2f4f6;
@@ -339,7 +346,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 13px;
   text-align: center;
 }
@@ -484,7 +491,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 16px;
   text-align: center;
   margin-bottom: 16px;
@@ -500,7 +507,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   color: #000000;
   font-size: 15px;
   text-align: center;
@@ -513,7 +520,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   color: #fff;
   min-width: 270px;
   background: #e03e2f;
@@ -541,8 +548,8 @@ body {
 }
 #es-vichy.es-vichy .es-cross__packshot--1::before {
   position: absolute;
-  content: "1";
-  font-family: "Roboto";
+  content: '1';
+  font-family: 'Roboto';
   color: #ebebeb;
   font-size: 160px;
   top: -15px;
@@ -555,8 +562,8 @@ body {
 }
 #es-vichy.es-vichy .es-cross__packshot--2::before {
   position: absolute;
-  content: "2";
-  font-family: "Roboto";
+  content: '2';
+  font-family: 'Roboto';
   color: #ebebeb;
   font-size: 160px;
   top: -68px;
@@ -566,8 +573,8 @@ body {
 }
 #es-vichy.es-vichy .es-cross__packshot--3::before {
   position: absolute;
-  content: "3";
-  font-family: "Roboto";
+  content: '3';
+  font-family: 'Roboto';
   color: #ebebeb;
   font-size: 160px;
   top: -50px;
@@ -591,7 +598,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   margin: 0 auto;
   margin-left: 15px;
   margin-bottom: 40px;
@@ -617,7 +624,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 13px;
   background-color: #f4f4f4;
   color: #000;
@@ -636,7 +643,7 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 700;
   position: relative;
   padding: 17px 50px 17px 15px;
@@ -650,8 +657,8 @@ body {
   position: relative;
 }
 #es-vichy.es-vichy .es-faq .es-accordion .acc-tab:before {
-  font-family: "FontAwesome";
-  content: "";
+  font-family: 'FontAwesome';
+  content: '';
   display: block;
   position: absolute;
   width: 50px;
@@ -684,7 +691,7 @@ body {
   font-family: inherit;
   font-weight: inherit;
   color: #000;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   margin-top: 20px;
   font-size: 11px;
   text-align: center;
@@ -711,7 +718,7 @@ body {
   margin: 0 auto;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 #es-vichy.es-vichy .es-video__play-button {
   position: absolute;
@@ -759,7 +766,7 @@ body {
   display: flex;
   justify-content: center;
   -moz-column-gap: 4px;
-       column-gap: 4px;
+  column-gap: 4px;
   margin-bottom: 40px;
 }
 #es-vichy.es-vichy .es-compare__single {
@@ -786,7 +793,7 @@ body {
   margin-bottom: 20px;
   min-height: 95px;
   padding: 24px 14px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 13px;
   font-weight: 700;
   text-align: center;
@@ -807,23 +814,29 @@ body {
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 12px;
   text-align: center;
   text-transform: uppercase;
 }
-#es-vichy.es-vichy .es-compare__type, #es-vichy.es-vichy .es-compare__problem, #es-vichy.es-vichy .es-compare__effect, #es-vichy.es-vichy .es-compare__consistency {
+#es-vichy.es-vichy .es-compare__type,
+#es-vichy.es-vichy .es-compare__problem,
+#es-vichy.es-vichy .es-compare__effect,
+#es-vichy.es-vichy .es-compare__consistency {
   margin-bottom: 10px;
 }
-#es-vichy.es-vichy .es-compare__type-title, #es-vichy.es-vichy .es-compare__problem-title, #es-vichy.es-vichy .es-compare__effect-title, #es-vichy.es-vichy .es-compare__consistency-title {
+#es-vichy.es-vichy .es-compare__type-title,
+#es-vichy.es-vichy .es-compare__problem-title,
+#es-vichy.es-vichy .es-compare__effect-title,
+#es-vichy.es-vichy .es-compare__consistency-title {
   margin: 0;
   padding: 0;
   line-height: inherit;
   color: inherit;
   font-family: inherit;
   font-weight: inherit;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 700;
   padding-top: 18px;
@@ -836,7 +849,10 @@ body {
   z-index: 1;
   position: relative;
 }
-#es-vichy.es-vichy .es-compare__type-subtitle, #es-vichy.es-vichy .es-compare__problem-subtitle, #es-vichy.es-vichy .es-compare__effect-subtitle, #es-vichy.es-vichy .es-compare__consistency-subtitle {
+#es-vichy.es-vichy .es-compare__type-subtitle,
+#es-vichy.es-vichy .es-compare__problem-subtitle,
+#es-vichy.es-vichy .es-compare__effect-subtitle,
+#es-vichy.es-vichy .es-compare__consistency-subtitle {
   margin: 0;
   padding: 0;
   line-height: inherit;
@@ -847,7 +863,7 @@ body {
   font-size: 13px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   width: 50%;
   text-align: center;
   background: #f4f4f4;
@@ -863,7 +879,7 @@ body {
   display: flex;
   justify-content: space-around;
   -moz-column-gap: 4px;
-       column-gap: 4px;
+  column-gap: 4px;
 }
 @media screen and (min-width: 400px) {
   #es-vichy.es-vichy .es-kv__content {
@@ -979,11 +995,12 @@ body {
     max-width: 200px;
     margin-bottom: 30px;
   }
-  #es-vichy.es-vichy .es-ingr__img--2, #es-vichy.es-vichy .es-ingr__img--3 {
+  #es-vichy.es-vichy .es-ingr__img--2,
+  #es-vichy.es-vichy .es-ingr__img--3 {
     max-width: 175px;
   }
   #es-vichy.es-vichy .es-ingr__img--4 {
-    margin-top: -50px;
+    margin-top: -55px;
   }
   #es-vichy.es-vichy .es-ingr__text {
     font-size: 14px;
@@ -1251,12 +1268,16 @@ body {
   #es-vichy.es-vichy .es-ingr__img {
     max-width: 225px;
   }
-  #es-vichy.es-vichy .es-ingr__img--2, #es-vichy.es-vichy .es-ingr__img--3 {
+  #es-vichy.es-vichy .es-ingr__img--2,
+  #es-vichy.es-vichy .es-ingr__img--3 {
     max-width: 200px;
   }
   #es-vichy.es-vichy .es-ingr__slides--desktop {
     max-width: none;
     gap: 0;
+  }
+  #es-vichy.es-vichy .es-cross__text {
+    max-width: 245px;
   }
   #es-vichy.es-vichy .es-cross__packshot--1::before {
     top: -45px;
@@ -1277,10 +1298,20 @@ body {
     gap: 0;
   }
   #es-vichy.es-vichy .es-compare__single {
-    min-width: 225px;
+    min-width: 228px;
   }
   #es-vichy.es-vichy .es-compare__single-title {
     font-size: 15px;
+  }
+}
+@-webkit-keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes slidedown {
@@ -1293,6 +1324,16 @@ body {
     transform: translateY(0);
   }
 }
+@-webkit-keyframes slideright {
+  from {
+    opacity: 0.3;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes slideright {
   from {
     opacity: 0.3;
@@ -1302,4 +1343,4 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
-}/*# sourceMappingURL=style.css.map */
+}

@@ -1026,7 +1026,7 @@ body {
         }
 
         &--4 {
-          margin-top: -50px;
+          margin-top: -55px;
         }
       }
       &__text {
@@ -1359,6 +1359,9 @@ body {
     }
 
     .es-cross {
+      &__text {
+        max-width: 245px;
+      }
       &__packshot {
         &--1 {
           &::before {
@@ -1389,7 +1392,7 @@ body {
         gap: 0;
       }
       &__single {
-        min-width: 225px;
+        min-width: 228px;
       }
 
       &__single-title {

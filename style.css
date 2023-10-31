@@ -1011,6 +1011,9 @@ body {
   #es-vichy.es-vichy .es-compare__packshots--mobile {
     display: none;
   }
+  #es-vichy.es-vichy .es-compare__packshots--desktop {
+    display: block;
+  }
   #es-vichy.es-vichy .es-compare__mobile-wrapper {
     margin: 0 auto;
     flex-wrap: wrap;

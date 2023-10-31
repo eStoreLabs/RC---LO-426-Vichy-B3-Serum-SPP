@@ -1060,6 +1060,9 @@ body {
         &--mobile {
           display: none;
         }
+        &--desktop {
+          display: block;
+        }
       }
       &__mobile-wrapper {
         margin: 0 auto;

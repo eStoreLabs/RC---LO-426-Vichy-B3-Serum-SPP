@@ -748,6 +748,7 @@ body {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  min-height: 647px;
 }
 #es-vichy.es-vichy .es-video__play-button {
   position: absolute;
@@ -1084,6 +1085,7 @@ body {
   }
   #es-vichy.es-vichy .es-video__player--desktop {
     display: block;
+    min-height: 407px;
   }
   #es-vichy.es-vichy .es-video__play-button--mobile {
     display: none;
@@ -1399,10 +1401,13 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    min-height: 420px;
+    min-height: 380px;
   }
   #es-vichy.es-vichy .es-cross__packshot--2 {
     max-width: 250px;
+  }
+  #es-vichy.es-vichy .es-cross__img--2 {
+    max-width: 204px;
   }
   #es-vichy.es-vichy .es-cross__packshot--2::before {
     left: 21%;
@@ -1471,7 +1476,7 @@ body {
     font-size: 200px;
   }
   #es-vichy.es-vichy .es-cross__single--middle {
-    margin-left: -30px;
+    margin-left: -10px;
   }
   #es-vichy.es-vichy .es-compare__mobile-wrapper {
     flex-wrap: nowrap;
